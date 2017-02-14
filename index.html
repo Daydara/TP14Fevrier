@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>VR SENSE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <header>
+        <img class="logo" src="http://www.koeitecmoeurope.com/images/kt_logo_large_eu.png">
+    </header>
+    
+    <script type="text/javascript">
+        
+        function change_onglet(name) {
+            document.getElementById('onglet_'+anc_onglet).className='onglet_0 onglet';
+            document.getElementById('onglet_'+name).className = 'onglet_1 onglet';
+            document.getElementById('contenu_onglet_'+anc_onglet).style.display = 'none';
+            document.getElementById('contenu_onglet_'+name).style.display = 'block';
+            anc_onglet = name;
+        }
+    
+    </script>
+    
+
+</head>
+
+<body>
+        <div class="systeme_onglets">
+        <div class="onglets">
+            <span class="onglet_0 onglet" id="onglet_accueil" onclick="javascript:change_onglet('accueil');">Accueil</span>
+            <span class="onglet_0 onglet" id="onglet_presentation" onclick="javascript:change_onglet('presentation');">Présentation</span>
+            <span class="onglet_0 onglet" id="onglet_carac" onclick="javascript:change_onglet('carac');">Caractéristiques</span>
+            <span class="onglet_0 onglet" id="onglet_koei" onclick="javascript:change_onglet('koei');">Koei Tecmo</span>
+            <span class="onglet_0 onglet" id="onglet_contact" onclick="javascript:change_onglet('contact');">Contact</span>
+            
+        </div>
+        <div class="contenu_onglets">
+        <div class="contenu_onglet" id="contenu_onglet_accueil">
+            <h1>Accueil</h1>
+                Sur notre site vous retrevrez:<br />
+                <ul>
+                    <li>Présention du VR SENSE</li>
+                    <li>Caractéristiques du VR SENSE<l/i>
+                    <li>Toei Tecmo</li>
+                    <li>Contact et Achat</li>
+                </ul>
+        </div>
+            <div class="contenu_onglet" id="contenu_onglet_presentation">
+               <h1>Présentation</h1>
+                    <p>Notre société Koei Tecmo, spécialiste japonais des jeux vidéo vient de dévoiler ce qui pourrait bien être le divertissement de demain, à savoir une borne d’arcade dédiée à la réalité virtuelle et baptisée VR Sense une borne d’arcade de la réalité virtuelle qui stimule 4 des 5 sens .</p>
+                    <img class="koei" src="koei_techmo_logo.jpg">
+                    <p>La cabine VR Sense sera idéale pour équiper les salles d’arcades qui souhaiteront proposer une expérience immersive inoubliable à leurs clients, ou les salles spécialisées dans la VR. En effet, cette cabine est comme un cocon dans lequel pourra s’isoler un joueur, tout en profitant d’une expérience révolutionnaire et immersive utilisant 4 des 5 sens !</p>
+            </div>
+            <div class="contenu_onglet" id="contenu_onglet_carac">
+                <h1>Caractéristiques</h1>
+                    <p>Notre cabine de jeu en VR (réalité virtuelle) est destinée aux salles d'arcade, notre borne la VR Sense stimule quatre des cinq sens: l'Odorat, le Toucher, l'Ouïe et la Vue.</p>
+                    
+                    <img src="20170207061727a0emwqanohw1eipj.jpg">
+                    
+                    <p>Quelles sont les particularités de notre cabine de réalité virtuelle totale ? 
+
+                    <p>Tout d’abord, son siège, capable de bouger vers le haut, le bas ou bien sur les côtés. Plus original, la cabine est dotée d’une fonction vent pour donner la sensation au joueur de courir en plein air et de prendre de la vitesse. Une fonction chaud et froid peut modifier la température de l’habitacle, dans lequel la réalité virtuelle peut également duper vos sens en vous donnant la réelle impression qu’il pleut, qu'il neige ou qu'il fait chaud.</p>
+
+                    <img src="vr-sense-2.jpg">
+
+                    <p>Côté odeurs, le VR Sense est capable de répliquer une panoplie de senteurs, que le jeu vous emmène au coeur d’une forêt ou d’un champ de bataille comme des senteurs boisées, de montagne enneigée ou de désert aride.</p>
+
+                    <p>Pour le toucher, nous avons fait plus simple en motorisant tout le siège afin que ce dernier puisse s'incliner dans certaines directions. Les vibrations ne sont pas oubliées. C'est une ceinture passant par dessus le torse et la taille, intégrée à la cabine qui se charge de reproduire les chocs, voire de simuler des insectes qui vous grimpent dessus.</p>
+
+                    <p> Une vidéo de présentaion et de démo de la borne VR Sense sera bientot disponible.</p>
+
+            </div>
+            <div class="contenu_onglet" id="contenu_onglet_koei">
+                <h1>Koei Tecmo</h1>
+                    <p>Koei Tecmo Games (コーエーテクモゲームス) est une entreprise fondée le 1er avril 2011 qui exerce son activité dans le développement de jeu vidéo, née de la fusion des entreprises japonaises Tecmo et Koei. Cinq filiales, en Chine (Tianjin, Pékin), au Vietnam, Canada et Singapour sont placées sous la tutelle de Tecmo Koei Games. </p>
+
+                    <p>Koei Tecmo Games connu pour ses nombreux jeux:
+                        <ul>
+                            <li>Dead Or Alive</li>
+                            <li>Ni-Oh</li>
+                            <li>Samurai Warriors</li>
+                            <li>Dynasty Warriors</li>
+                            <li>Sengoku Basara</li>
+                        </ul>
+                    </p>
+
+                    <p>Se lance désormais dans la Réalité Virtuelle avec la VR Sense et nous ésperons continuer de pouvoir vous faire rever.</p>
+                    
+            </div>
+            <div class="contenu_onglet" id="contenu_onglet_contact">
+                <h1>Formulaire de contact</h1>
+                    
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //<!--
+                var anc_onglet = 'accueil';
+                change_onglet(anc_onglet);
+        //-->
+        </script>
+</body>
+</html>
