@@ -2,12 +2,12 @@
 <html>
 <head>
     
-    <title>VR SENSE</title>
+    <title>Koei Tecmo VR Sense</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="koei_techmo_logo.jpg">
     <meta charset="utf-8">
-    <header>
-        <img class="logo" src="http://www.koeitecmoeurope.com/images/kt_logo_large_eu.png">
-    </header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
     
     <script type="text/javascript">
         
@@ -25,6 +25,9 @@
 </head>
 
 <body>
+    <header style="text-align:center"> 
+        <img class="logo" src="kt_logo_large_eu.png">
+    </header>
         <div class="systeme_onglets">
         <div class="onglets">
             <span class="onglet_0 onglet" id="onglet_accueil" onclick="javascript:change_onglet('accueil');">Accueil</span>
@@ -37,7 +40,7 @@
         <div class="contenu_onglets">
         <div class="contenu_onglet" id="contenu_onglet_accueil">
             <h1>Accueil</h1>
-                Sur notre site vous retrevrez:<br />
+                Sur notre site vous retrouvrez:<br />
                 <ul>
                     <li>Présention du VR SENSE</li>
                     <li>Caractéristiques du VR SENSE<l/i>
@@ -46,22 +49,25 @@
                 </ul>
         </div>
             <div class="contenu_onglet" id="contenu_onglet_presentation">
-               <h1>Présentation</h1>
+               <h1>Présentation:</h1>
                     <p>Notre société Koei Tecmo, spécialiste japonais des jeux vidéo vient de dévoiler ce qui pourrait bien être le divertissement de demain, à savoir une borne d’arcade dédiée à la réalité virtuelle et baptisée VR Sense une borne d’arcade de la réalité virtuelle qui stimule 4 des 5 sens .</p>
                     <img class="koei" src="koei_techmo_logo.jpg">
                     <p>La cabine VR Sense sera idéale pour équiper les salles d’arcades qui souhaiteront proposer une expérience immersive inoubliable à leurs clients, ou les salles spécialisées dans la VR. En effet, cette cabine est comme un cocon dans lequel pourra s’isoler un joueur, tout en profitant d’une expérience révolutionnaire et immersive utilisant 4 des 5 sens !</p>
             </div>
             <div class="contenu_onglet" id="contenu_onglet_carac">
-                <h1>Caractéristiques</h1>
+                <h1>Caractéristiques:</h1>
                     <p>Notre cabine de jeu en VR (réalité virtuelle) est destinée aux salles d'arcade, notre borne la VR Sense stimule quatre des cinq sens: l'Odorat, le Toucher, l'Ouïe et la Vue.</p>
                     
-                    <img src="20170207061727a0emwqanohw1eipj.jpg">
-                    
+                    <figure>
+                    <img class="img1" src="20170207061727a0emwqanohw1eipj.jpg">
+                    <figcaption>La borne VR Sense</figcaption>
+                    </figure>
+
                     <p>Quelles sont les particularités de notre cabine de réalité virtuelle totale ? 
 
                     <p>Tout d’abord, son siège, capable de bouger vers le haut, le bas ou bien sur les côtés. Plus original, la cabine est dotée d’une fonction vent pour donner la sensation au joueur de courir en plein air et de prendre de la vitesse. Une fonction chaud et froid peut modifier la température de l’habitacle, dans lequel la réalité virtuelle peut également duper vos sens en vous donnant la réelle impression qu’il pleut, qu'il neige ou qu'il fait chaud.</p>
 
-                    <img src="vr-sense-2.jpg">
+                    <img class="img1" src="vr-sense-2.jpg">
 
                     <p>Côté odeurs, le VR Sense est capable de répliquer une panoplie de senteurs, que le jeu vous emmène au coeur d’une forêt ou d’un champ de bataille comme des senteurs boisées, de montagne enneigée ou de désert aride.</p>
 
@@ -89,15 +95,47 @@
             </div>
             <div class="contenu_onglet" id="contenu_onglet_contact">
                 <h1>Formulaire de contact</h1>
+                    <form>
+                        <label for="nom"> Nom: </label> <br>
+                        <input type="text" name="nom" placeholder="Votre nom" />
+                        <br> <br>
+                        <label for="prenom">Prénom:</label> <br>
+                        <input type="text" name="prenom" placeholder="Votre prénom">
+                        <br> <br>
+                        <label for="naissance">Date de naissance:</label> <br>
+                        <input type="date" name="naissance" placeholder="00/00/0000" />
+                        <br> <br>
+                        <label for="email">Adresse mail:</label> <br>
+                        <input type="email" name="email" placeholder="Votre adresse mail">
+                        <br> <br>
+                        <label for="telephone">Numéro de Télephone:</label> <br>
+                        <input type="tel" name="numérotel" placeholder="Numéro de telephone">
+                        <br> <br>
+                        <label for="sexe">Sexe:</label> <br>
+                        <input type="radio" name="gender" value="homme" checked> Homme<br>
+                        <input type="radio" name="gender" value="femme"> Femme<br>
+                        <input type="radio" name="gender" value="autre"> Autre
+                        <br> <br>
+                        <label for="message"> Message:</label> <br>
+                        <textarea name="message" rows="10" cols="30"></textarea>
+                        <br><br>
+                        <input type="submit" value="Envoyer" />
+                    </form>
+                 
+                    
                     
             </div>
         </div>
     </div>
+
+    <footer>
+        <p> Fait par Youssef pour la KOEI TECMO GAMES CO LTD, All rights reserved. </p>
+    </footer>
     <script type="text/javascript">
-        //<!--
+        
                 var anc_onglet = 'accueil';
                 change_onglet(anc_onglet);
-        //-->
+        
         </script>
 </body>
 </html>
